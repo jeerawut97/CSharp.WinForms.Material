@@ -31,16 +31,16 @@
             components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             materialTabControl1 = new MaterialSkin.Controls.MaterialTabControl();
-            tabPage1 = new TabPage();
-            tabPage2 = new TabPage();
+            homePage = new TabPage();
+            aboutPage = new TabPage();
             imageList1 = new ImageList(components);
             materialTabControl1.SuspendLayout();
             SuspendLayout();
             // 
             // materialTabControl1
             // 
-            materialTabControl1.Controls.Add(tabPage1);
-            materialTabControl1.Controls.Add(tabPage2);
+            materialTabControl1.Controls.Add(homePage);
+            materialTabControl1.Controls.Add(aboutPage);
             materialTabControl1.Depth = 0;
             materialTabControl1.ImageList = imageList1;
             materialTabControl1.Location = new Point(-1, 67);
@@ -52,27 +52,27 @@
             materialTabControl1.Size = new Size(802, 534);
             materialTabControl1.TabIndex = 0;
             // 
-            // tabPage1
+            // homePage
             // 
-            tabPage1.ImageKey = "home.png";
-            tabPage1.Location = new Point(4, 53);
-            tabPage1.Name = "tabPage1";
-            tabPage1.Padding = new Padding(3);
-            tabPage1.Size = new Size(794, 477);
-            tabPage1.TabIndex = 0;
-            tabPage1.Text = "Home";
-            tabPage1.UseVisualStyleBackColor = true;
+            homePage.ImageKey = "home.png";
+            homePage.Location = new Point(4, 53);
+            homePage.Name = "homePage";
+            homePage.Padding = new Padding(3);
+            homePage.Size = new Size(794, 477);
+            homePage.TabIndex = 0;
+            homePage.Text = "Home";
+            homePage.UseVisualStyleBackColor = true;
             // 
-            // tabPage2
+            // aboutPage
             // 
-            tabPage2.ImageKey = "info.png";
-            tabPage2.Location = new Point(4, 53);
-            tabPage2.Name = "tabPage2";
-            tabPage2.Padding = new Padding(3);
-            tabPage2.Size = new Size(780, 470);
-            tabPage2.TabIndex = 1;
-            tabPage2.Text = "About";
-            tabPage2.UseVisualStyleBackColor = true;
+            aboutPage.ImageKey = "info.png";
+            aboutPage.Location = new Point(4, 53);
+            aboutPage.Name = "aboutPage";
+            aboutPage.Padding = new Padding(3);
+            aboutPage.Size = new Size(794, 477);
+            aboutPage.TabIndex = 1;
+            aboutPage.Text = "About";
+            aboutPage.UseVisualStyleBackColor = true;
             // 
             // imageList1
             // 
@@ -99,8 +99,8 @@
         #endregion
 
         private MaterialSkin.Controls.MaterialTabControl materialTabControl1;
-        private TabPage tabPage1;
-        private TabPage tabPage2;
+        private TabPage homePage;
+        private TabPage aboutPage;
         private ImageList imageList1;
     }
 }
